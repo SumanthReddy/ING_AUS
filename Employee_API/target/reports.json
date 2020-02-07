@@ -1,0 +1,58 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Get All Employees record",
+        "description": "",
+        "id": "test-crud-methods-in-sample-employee-rest-api-testing;get-all-employees-record",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 97833390,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "GET all employee service api endpoint",
+            "match": {
+              "location": "EmployeeSteps.i_set_get_all_employee_service_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2397042351,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Send a GET HTTP request",
+            "match": {
+              "location": "EmployeeSteps.send_a_get_http_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 77869969,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I receive get valid Response",
+            "match": {
+              "location": "EmployeeSteps.i_receive_get_valid_response()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test CRUD methods in Sample Employee REST API testing",
+    "description": "",
+    "id": "test-crud-methods-in-sample-employee-rest-api-testing",
+    "keyword": "Feature",
+    "uri": "C:/Users/dudekulanelapa/workspace/Employee_API/src/test/java/Employee_RESTAPI/Employee.feature"
+  }
+]
