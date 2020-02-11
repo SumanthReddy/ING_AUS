@@ -1,16 +1,74 @@
 package EmployeeUtilites;
 
-import java.util.HashMap;
-
 public class EmployeeData {
 
-	public static HashMap<String, String> map = new HashMap<String, String>();
-
-	public static HashMap<String, String> PostRequest() {
-		map.put("id", "10");
-		map.put("employee_name", "Adhambi");
-		map.put("employee_salary", "20000");
-		map.put("employee_age", "28");
-		return map;
+	private int id;
+	private String employeeName;
+	private int employeeAge;
+	private double employeeSalary;
+	private String profileImage;
+	
+	
+	public void Employee(int id,String employeeName, int employeeAge, double employeeSalary){
+		this.id=id;
+		this.employeeName = employeeName;
+		this.employeeAge = employeeAge;
+		this.employeeSalary = employeeSalary;
+		//this.profileImage = profileImage;	
 	}
+
+
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		System.out.println("set id "+id);
+		this.id = id;
+	}
+
+
+	public String getEmployeeName() {
+		return employeeName;
+	}
+
+
+	public void setEmployeeName(String employeeName) {
+		this.employeeName = employeeName;
+	}
+
+
+	public int getEmployeeAge() {
+		return employeeAge;
+	}
+
+
+	public void setEmployeeAge(int employeeAge) {
+		this.employeeAge = employeeAge;
+	}
+
+
+	public double getEmployeeSalary() {
+		return employeeSalary;
+	}
+
+
+	public void setEmployeeSalary(double employeeSalary) {
+		this.employeeSalary = employeeSalary;
+	}
+
+
+	public String getProfileImage() {
+		return profileImage;
+	}
+
+
+	public void setProfileImage(String profileImage) {
+		this.profileImage = profileImage;
+	}
+	
+
+	
+
 }
